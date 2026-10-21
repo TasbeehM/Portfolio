@@ -1,6 +1,10 @@
+
+/* ================= GENERAL ================= */
+
 html {
     scroll-behavior: smooth;
 }
+
 #navbar {
     width: 100%;
 }
@@ -8,96 +12,135 @@ html {
 body {
     padding-top: 70px;
 }
+
 .mahmoud {
-    color: #8B5CF6 ;
+    color: #8B5CF6;
     text-shadow: 0 0 3.5px #8B5CF6;
 }
-.navbar-name{
+
+.navbar-name {
     font-size: 23px;
-
 }
 
-.nav-link{
+.nav-link {
     font-size: 18px;
-   
 }
+
 .nav-link:hover {
     color: #8B5CF6 !important;
 }
+
 .nav-item {
     margin-right: 20px;
 }
-/* /////////////////////////////home */
+
+
+/* ================= DARK MODE BUTTON ================= */
+
+.theme-btn {
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 991px) {
+    .theme-btn {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* ================= HOME ================= */
+
 .home-name {
     font-size: 90px;
     text-align: center;
-    margin-top:100px ;
+    margin-top: 100px;
 }
 
-#typing-text ,
-.location{
-    opacity: 50%;
+#typing-text,
+.location {
+    opacity: 0.5;
     min-height: 35px;
 }
+
+.home,
+#about {
+    text-align: center;
+}
+
 .my-button {
     background-color: #8B5CF6 !important;
     border-color: #8B5CF6 !important;
     color: white !important;
     margin-top: 40px;
     border-radius: 30px !important;
-    padding: 14px 25px  !important;
-    box-shadow:0 0 10px #8B5CF6 ;
+    padding: 14px 25px !important;
+    box-shadow: 0 0 10px #8B5CF6;
 }
 
 .my-button:hover {
     background-color: #4A5AFF !important;
     border-color: #4A5AFF !important;
 }
-.home ,
-#about{
-    text-align: center;
-}
-/* ////////////////////////////about */
+
+
+/* ================= ABOUT ================= */
+
 .section-title {
     margin-top: 150px;
     margin-bottom: 15px;
     display: inline-block;
     border-bottom: 3px solid #8B5CF6;
     padding-bottom: 5px;
-
 }
+
 .social-links {
     display: flex;
     gap: 30px;
 }
+
 .social-icon {
     margin-top: 20px;
     width: 60px;
     height: 60px;
     font-size: 28px;
-    color:#8B5CF6;
+    color: #8B5CF6;
     border-radius: 50%;
-    border: 1px solid #8B5CF6 ;
+    border: 1px solid #8B5CF6;
     padding: 15px;
-      display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
 }
-.social-icon:hover{
-      transform: scale(1.10);
+
+.social-icon:hover {
+    transform: scale(1.1);
     box-shadow: 0 0 8px #8B5CF6;
     color: #ffffff;
     background-color: #8B5CF6;
-    
     transition: 0.3s ease;
-   
 }
-.line{
-        display: inline-block;
+
+.line {
+    display: inline-block;
     border-bottom: 5px solid #8B5CF6;
     padding-bottom: 7px;
 }
+
 .about-image {
     width: 350px;
     height: 350px;
@@ -105,8 +148,9 @@ body {
     border-radius: 50%;
     box-shadow: 2px 2px 25px #8B5CF6;
     cursor: pointer;
-     transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
+
 img:hover {
     box-shadow: 0 0 25px #8B5CF6;
     transform: scale(1.05);
@@ -115,21 +159,18 @@ img:hover {
 .about-text {
     text-align: left;
     font-size: 20px;
-    opacity: 90%;
+    opacity: 0.9;
 }
 
 .download-cv {
     display: inline-block;
     margin-top: 25px;
     padding: 10px 26px !important;
-
     color: #8B5CF6 !important;
     border: 1px solid #8B5CF6 !important;
     border-radius: 50px;
-
     font-weight: 700;
     text-decoration: none;
-
     transition: 0.3s ease;
 }
 
@@ -139,6 +180,9 @@ img:hover {
     transform: translateY(-2px);
     box-shadow: 0 0 8px #8B5CF6;
 }
+
+
+/* ================= SKILLS ================= */
 
 .skills-section {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -176,6 +220,9 @@ img:hover {
     background: #8B5CF6;
 }
 
+
+/* ================= EDUCATION ================= */
+
 .education-item {
     background-color: #ffffff;
     border-left: 4px solid #8B5CF6;
@@ -210,38 +257,50 @@ img:hover {
     color: #8B5CF6;
     font-weight: 500;
 }
+
+
+/* ================= EXPERIENCE ================= */
+
 .badge {
     color: white !important;
     background-color: #8B5CF6 !important;
 }
-.xxs{
+
+.xxs {
     font-size: 12px;
     color: #8B5CF6;
 }
+
 .experience-card {
     max-width: 850px;
     margin-left: auto;
     margin-right: auto;
 }
-.color{
-color: #8B5CF6 !important;
+
+.color {
+    color: #8B5CF6 !important;
 }
+
 .btn-primary {
-  background-color: #8B5CF6 !important;
+    background-color: #8B5CF6 !important;
     border-color: #8B5CF6 !important;
     color: white !important;
     margin-top: 10px;
     border-radius: 10px !important;
-    padding: 10px 12px  !important;
-    box-shadow:0 0 10px #8B5CF6 ;
+    padding: 10px 12px !important;
+    box-shadow: 0 0 10px #8B5CF6;
 }
-/* //////////////////////////////////thank */
-.thank{
+
+
+/* ================= THANK YOU ================= */
+
+.thank {
     margin-top: 180px;
     font-size: 140px;
     text-align: center;
     margin-bottom: 220px;
 }
+
 
 /* ================= PROJECTS ================= */
 
@@ -278,35 +337,24 @@ color: #8B5CF6 !important;
     position: absolute;
     top: 15px;
     right: 15px;
-
     background-color: #8B5CF6;
     color: white;
-
     padding: 6px 12px;
     border-radius: 20px;
-
     font-size: 14px;
     font-weight: bold;
 }
 
-/* Tech Stack */
-
 .tag {
     display: inline-block;
-
     background-color: #f1f3ff;
     color: #8B5CF6;
-
     padding: 5px 10px;
     margin: 3px;
-
     border-radius: 15px;
-
     font-size: 12px;
     font-weight: 600;
 }
-
-/* Project Title */
 
 .project-card .card-title {
     font-size: 24px;
@@ -318,8 +366,6 @@ color: #8B5CF6 !important;
     color: #666;
     line-height: 1.7;
 }
-
-/* Links */
 
 .live-demo,
 .github-link {
@@ -339,10 +385,380 @@ color: #8B5CF6 !important;
 .github-link:hover {
     text-decoration: underline;
 }
+
 .social-links-finally {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     margin-top: 180px;
+}
+
+
+/* ================= DARK MODE ================= */
+
+/* Make the main page background change immediately */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #f1f1f1 !important;
+    transition: none !important;
+}
+
+/* Navbar */
+body.dark-mode #navbar .navbar {
+    background-color: #1e1e1e !important;
+    transition: none !important;
+}
+
+body.dark-mode #navbar .navbar-name,
+body.dark-mode #navbar .nav-link {
+    color: #f1f1f1 !important;
+}
+
+body.dark-mode #navbar .mahmoud {
+    color: #A78BFA !important;
+}
+
+body.dark-mode .navbar-toggler {
+    border-color: #777777 !important;
+}
+
+body.dark-mode .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Home: the area directly below the navbar */
+body.dark-mode .home,
+body.dark-mode #home {
+    background-color: #121212 !important;
+    color: #f1f1f1 !important;
+    transition: none !important;
+}
+
+/* Remove light backgrounds inside Home */
+body.dark-mode .home .bg-light,
+body.dark-mode #home .bg-light,
+body.dark-mode .home .bg-white,
+body.dark-mode #home .bg-white {
+    background-color: #121212 !important;
+    color: #f1f1f1 !important;
+    transition: none !important;
+}
+
+/* All main sections */
+body.dark-mode section,
+body.dark-mode #about,
+body.dark-mode .skills-section,
+body.dark-mode .projects-section {
+    background-color: #121212 !important;
+    color: #f1f1f1 !important;
+    transition: none !important;
+}
+
+/* Stop background and text color transitions in dark mode */
+body.dark-mode *,
+body.dark-mode *::before,
+body.dark-mode *::after {
+    transition-property: transform, box-shadow !important;
+}
+
+/* Headings and text */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode label,
+body.dark-mode .about-text,
+body.dark-mode .skill-category-title,
+body.dark-mode .projects-subtitle,
+body.dark-mode .home-name,
+body.dark-mode #typing-text,
+body.dark-mode .location {
+    color: #f1f1f1 !important;
+}
+
+/* About image and social icons keep their original styling */
+body.dark-mode .social-icon {
+    color: #A78BFA;
+    border-color: #8B5CF6;
+}
+
+/* Skills */
+body.dark-mode .skill-item {
+    color: #f1f1f1 !important;
+    border-color: #66509b !important;
+}
+
+/* Education */
+body.dark-mode .education-item {
+    background-color: #222222 !important;
+    color: #f1f1f1 !important;
+    border-left-color: #8B5CF6 !important;
+}
+
+body.dark-mode .education-item h3,
+body.dark-mode .education-item h4,
+body.dark-mode .education-item p,
+body.dark-mode .education-item .education-status {
+    color: #f1f1f1 !important;
+}
+
+body.dark-mode .education-date {
+    color: #bbbbbb !important;
+}
+
+/* Cards and projects */
+body.dark-mode .card,
+body.dark-mode .project-card {
+    background-color: #222222 !important;
+    color: #f1f1f1 !important;
+    border-color: #444444 !important;
+}
+
+body.dark-mode .project-card .card-title,
+body.dark-mode .project-card .card-text {
+    color: #f1f1f1 !important;
+}
+
+body.dark-mode .tag {
+    background-color: #333044 !important;
+    color: #C4B5FD !important;
+}
+
+body.dark-mode .github-link {
+    color: #f1f1f1 !important;
+}
+
+/* Forms, if present */
+body.dark-mode .form-control {
+    background-color: #252525 !important;
+    color: #ffffff !important;
+    border-color: #555555 !important;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #bbbbbb !important;
+}
+
+/* Dark mode button */
+body.dark-mode .theme-btn {
+    color: #ffd166 !important;
+    border-color: #777777 !important;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablets and small laptops */
+@media (max-width: 991px) {
+
+    /* Navbar */
+    .nav-item {
+        margin-right: 0;
+    }
+
+    .navbar-nav {
+        padding-top: 10px;
+    }
+
+    .theme-btn {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Home */
+    .home-name {
+        font-size: 60px;
+        margin-top: 70px;
+    }
+
+    /* Section headings */
+    .section-title {
+        margin-top: 90px;
+    }
+
+    /* About image */
+    .about-image {
+        width: 280px;
+        height: 280px;
+    }
+
+    /* Thank you */
+    .thank {
+        font-size: 90px;
+        margin-top: 120px;
+        margin-bottom: 140px;
+    }
+
+    /* Social links */
+    .social-links {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .social-links-finally {
+        margin-top: 100px;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Mobile phones */
+@media (max-width: 576px) {
+
+    /* Navbar */
+    .navbar-name {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    /* Home */
+    .home-name {
+        font-size: clamp(32px, 9vw, 48px);
+        margin-top: 45px;
+        overflow-wrap: anywhere;
+    }
+
+    #typing-text,
+    .location {
+        font-size: 14px;
+        min-height: 30px;
+    }
+
+    .my-button {
+        margin-top: 25px;
+        padding: 12px 20px !important;
+    }
+
+    /* Section headings */
+    .section-title {
+        margin-top: 65px;
+        margin-bottom: 15px;
+        font-size: 26px;
+    }
+
+    /* About */
+.about-image {
+    width: min(75vw, 250px);
+    height: min(75vw, 250px);
+    margin-right: 20px;
+}
+
+.about-text {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+    .download-cv {
+        margin-top: 15px;
+    }
+
+    /* Social icons */
+    .social-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .social-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    /* Skills */
+    .skill-category-title {
+        font-size: 18px;
+    }
+
+    .skill-item {
+        font-size: 13px;
+        padding: 8px 12px;
+        gap: 7px;
+    }
+
+    /* Education */
+    .education-item {
+        padding: 20px 16px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .education-item h3 {
+        font-size: 22px;
+    }
+
+    .education-item h4 {
+        font-size: 18px;
+    }
+
+    /* Experience */
+    .experience-card {
+        width: 100%;
+    }
+
+    /* Projects */
+    .project-image {
+        height: 190px;
+    }
+
+    .project-card .card-title {
+        font-size: 21px;
+    }
+
+    .project-card .card-text {
+        font-size: 14px;
+    }
+
+    .tag {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
+    /* Thank you */
+    .thank {
+        font-size: clamp(42px, 12vw, 65px);
+        margin-top: 80px;
+        margin-bottom: 100px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Final social links */
+    .social-links-finally {
+        margin-top: 20px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Very small phones */
+@media (max-width: 360px) {
+
+    .home-name {
+        font-size: 30px;
+    }
+
+    .about-image {
+        width: 210px;
+        height: 210px;
+    }
+
+    .section-title {
+        font-size: 23px;
+    }
+
+    .education-item {
+        padding: 16px 12px;
+    }
+
+    .theme-btn {
+        width: 36px;
+        height: 36px;
+    }
 }
