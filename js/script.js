@@ -1,15 +1,42 @@
 
-const themeToggle = document.getElementById("theme-toggle");
+/* ================= DARK / LIGHT MODE ================= */
 
-themeToggle.addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
+const themeToggles = [
+    document.getElementById("theme-toggle"),
+    document.getElementById("theme-toggle-desktop")
+];
 
-    if (document.body.classList.contains("dark-mode")) {
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-    } else {
-        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+function updateThemeIcons() {
+    const isDark = document.body.classList.contains("dark-mode");
+
+    themeToggles.forEach(function (button) {
+        if (button) {
+            button.innerHTML = isDark
+                ? '<i class="fas fa-sun"></i>'
+                : '<i class="fas fa-moon"></i>';
+
+            button.setAttribute(
+                "aria-label",
+                isDark ? "Switch to light mode" : "Switch to dark mode"
+            );
+        }
+    });
+}
+
+themeToggles.forEach(function (button) {
+    if (button) {
+        button.addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+            updateThemeIcons();
+        });
     }
 });
+
+updateThemeIcons();
+
+
+/* ================= TYPING ANIMATION ================= */
+
 const texts = [
     "React Front-End Developer",
     "3 Projects Built",
@@ -23,6 +50,8 @@ let isDeleting = false;
 function typeEffect() {
     const currentText = texts[textIndex];
     const element = document.getElementById("typing-text");
+
+    if (!element) return;
 
     if (!isDeleting) {
         element.textContent = currentText.substring(0, charIndex + 1);
@@ -47,31 +76,41 @@ function typeEffect() {
 }
 
 
-// Contact Form - Gmail
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+/* ================= CONTACT FORM - GMAIL ================= */
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+const contactForm = document.getElementById("contactForm");
 
-    const myEmail = "Tasbeeh.mahmoud2005@gmail.com";
+if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
 
-    const subject = encodeURIComponent("Portfolio Contact - " + name);
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
 
-    const body = encodeURIComponent(
-        "Name: " + name + "\n" +
-        "Email: " + email + "\n\n" +
-        "Message:\n" + message
-    );
+        const myEmail = "Tasbeeh.mahmoud2005@gmail.com";
 
-    const gmailURL =
-        "https://mail.google.com/mail/?view=cm&fs=1" +
-        "&to=" + encodeURIComponent(myEmail) +
-        "&su=" + subject +
-        "&body=" + body;
+        const subject = encodeURIComponent(
+            "Portfolio Contact - " + name
+        );
 
-    window.open(gmailURL, "_blank");
-});
+        const body = encodeURIComponent(
+            "Name: " + name + "\n" +
+            "Email: " + email + "\n\n" +
+            "Message:\n" + message
+        );
+
+        const gmailURL =
+            "https://mail.google.com/mail/?view=cm&fs=1" +
+            "&to=" + encodeURIComponent(myEmail) +
+            "&su=" + subject +
+            "&body=" + body;
+
+        window.open(gmailURL, "_blank");
+    });
+}
+
+
+/* ================= START TYPING ANIMATION ================= */
 
 typeEffect();
